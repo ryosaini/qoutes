@@ -23,7 +23,7 @@ box-shadow: none !important;
     font-weight: 400;
     line-height: 1.5;
     color: #212529;
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.529);
     background-clip: padding-box;
     border: 1px solid #ced4da;
     -webkit-appearance: none;
@@ -53,27 +53,32 @@ html,body{
     position: unset !important;
     top: 0 !important;
     min-height: fit-content !important;
+    background: url(https://images.pexels.com/photos/235985/pexels-photo-235985.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
 }
+.btn-outline-light:focus{
+    background-color: rgba(255, 255, 255, 0.529) !important;
+}
+
     </style>
 </head>
 
 <body class="bg-dark">
     <div class="container">
         <div class="row no-gutters" style="height:100vh">
-            <div class="col-md-7 col-12 m-auto shadow-lg  rounded">
+            <div class="col-md-7 col-12 m-auto  rounded" >
                <label class="text-white fs-4 pb-3">Select Language</label> <div id="google_translate_element" class="col-md-6 col-12"></div>
                 <div id="dquotes"
-                    class=" d-block text-white col-12 py-5 px-3 text-center border bg-secondary border-bottom-0  rounded-top  m-auto  fs-4"
+                    class=" d-block text-white col-12 py-5 px-3 text-center border  border-bottom-0  rounded-top  m-auto  fs-4"
                     style="height: 10.5rem;">
                 </div>
                 <span
-                    class=" d-block text-white col-12 py-2 px-5  text-end m-auto  border border-bottom-0 bg-secondary"><i>author</i></span>
+                    class=" d-block text-white col-12 py-2 px-5  text-end m-auto  border border-bottom-0 "><i>author</i></span>
                 <div id="dauthor"
-                    class=" d-block text-white col-12 py-3 px-5 text-end m-auto  border  bg-secondary rounded-bottom ">
+                    class=" d-block text-white col-12 py-3 px-5 text-end m-auto  border   rounded-bottom ">
                 </div>
             </div>
             <div class="col-md-7 col-12 mx-auto">
-                <button id="newq" class="btn btn-outline-info col-12 m-auto py-3">New Quotes...</button>
+                <button id="newq" class="btn btn-outline-light col-12 m-auto py-3">New Quotes...</button>
             </div>
         
         </div>
